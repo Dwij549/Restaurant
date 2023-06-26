@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>About us!</title>
+        <style>
+            body{
+                background-image: url(https://img.freepik.com/free-photo/successful-eldery-chef-with-hand-gesture_496169-2630.jpg?w=2000);
+            }
+        </style>
+    </head>
+    <body><center>
+        <header>
+            <h1><u><center>ABOUT US!</center></u></h1>
+        </header>
+        <hr>
+            <nav>
+                <ul>
+                    <li><a href="navigation.html">Home</a></li>
+                    <li><a href="About us.html">About us</a></li>
+                    <li><a href="Menu.html">Menu</a></li>
+                    <li><a href="send_a_mail.html">Send a mail</a></li>
+                </ul>
+            </nav>
+        <hr>
+        <hr>
+        <center><p>We are a indian restaurant with pure indian cuisines and food. All our food is vegitarian and cooked with love and devotion.</p></center>
+        <hr>
+        <footer>
+            <h4>Time:<span id="time"></span>
+            <br>
+            <br>
+                <div id="clk">
+            <script>
+                setInterval(showtime, 1000);
+                function showtime(){
+                    var time= new Date();
+                    var hours= time.getHours();
+                    var min= time.getMinutes();
+                    var sec= time.getSeconds();
+
+                    var current_time= hours+":"+min+":"+sec;
+                    document.getElementById("time").innerHTML=current_time
+                }
+                showtime();
+            </script>
+                </div>
+            </div>
+            Copyright:@dwij.chothani
+        </footer>
+    </body></center>
+</html>

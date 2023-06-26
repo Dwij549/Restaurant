@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>SPICY HUT!</title>
+        <style>
+            body{
+                background-image: url(https://media.istockphoto.com/id/639059982/photo/red-chili-peppers.jpg?s=612x612&w=0&k=20&c=OFzqnhr2VcbqXsys7d0UzbzsycVrHfIm3mZuL82fNcE=);
+                color:white
+            }
+        </style>
+    </head>
+    <body><center>
+        <header>
+            <h1><u><center>SPICY HUT</center></u></h1>
+            <div id="clock">
+        </header>
+        <hr>
+            <nav>
+                <ul>
+                    <li><a href="navigation.html" style="color: white;">Home</a></li>
+                    <li><a href="About us.html" style="color: white;">About us</a></li>
+                    <li><a href="Menu.html" style="color: white;">Menu</a></li>
+                    <li><a href="send_a_mail.html" style="color: white;">Send a mail</a></li>
+                </ul>
+            </nav>
+        <hr>
+        <h4><center>WELCOME TO SPICY HUT!</center></h4>
+        <h5><center>HOME OF PURE INDIAN CUISINES</center></h5>
+        <hr>
+        
+        <footer>
+            <h4>Time:<span id="time"></span>
+            <br>
+            <br>
+                <div id="clk">
+            <script>
+                setInterval(showtime, 1000);
+                function showtime(){
+                    var time= new Date();
+                    var hours= time.getHours();
+                    var min= time.getMinutes();
+                    var sec= time.getSeconds();
+
+                    var current_time= hours+":"+min+":"+sec;
+                    document.getElementById("time").innerHTML=current_time
+                }
+                showtime();
+            </script>
+                </div>
+            </div>
+            Copyright:@dwij.chothani
+        </footer>
+    </body></center>
+</html>

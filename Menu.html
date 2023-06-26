@@ -1,0 +1,101 @@
+<html>
+    <head>
+        <title>Menu</title>
+        <style>
+            body{
+                background-image: url(https://i0.wp.com/digital-photography-school.com/wp-content/uploads/2018/01/Charcuterie_Darina-Kopcok.jpg?w=600&h=1260&ssl=1);
+                color: white;
+            }
+            #veg{
+                float: left;
+            }
+            #nveg{
+                float: right;
+            }
+            footer{
+                float: Center;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+        <header>
+            <h1><center><u>Menu:</u></center></h1>
+        </header>
+        <hr>
+            <nav>
+                <ul>
+                    <li><a href="navigation.html" style="color:white">Home</a></li>
+                    <li><a href="About us.html" style="color:white">About us</a></li>
+                    <li><a href="Menu.html" style="color:white">Menu</a></li>
+                    <li><a href="send_a_mail.html" style="color:white">Send a mail</a></li>
+                </ul>
+            </nav>
+        </center>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <h3>Click Down On The Picture To See Our Vegetarian/Vegan Meals</h3>
+        <a href="Veg.html"><div id="veg"><img src="https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fimg1.cookinglight.timeinc.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2F4_3_horizontal_-_1200x900%2Fpublic%2Fimage%2F2017%2F03%2Fmain%2Fbeer-brushed-tofu-skewers-barley-1705p105.jpg%3Fitok%3DOdHLIfLx" width="600" height="400"></div></a>
+            <h3 id="nveg">Click Down On The Picture To See Our Non Vegetarian Meals</h3>
+        <a href="Non veg.html"><div id="nveg"><img src="https://joyfoodsunshine.com/wp-content/uploads/2022/06/chicken-kebabs-recipe-1.jpg" width="600" height="400"></div></a>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+        <footer>
+            <h4>Time:<span id="time"></span>
+            <br>
+            <br>
+                <div id="clk">
+            <script>
+                setInterval(showtime, 1000);
+                function showtime(){
+                    var time= new Date();
+                    var hours= time.getHours();
+                    var min= time.getMinutes();
+                    var sec= time.getSeconds();
+
+                    var current_time= hours+":"+min+":"+sec;
+                    document.getElementById("time").innerHTML=current_time
+                }
+                showtime();
+            </script>
+                </div>
+            </div>
+            Copyright:@dwij.chothani
+        </footer>
+        </center>
+    </body>
+</html>

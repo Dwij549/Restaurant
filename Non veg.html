@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non Vegetarian Meals</title>
+    <style>
+        .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        border: solid;
+        justify-content: center;
+        align-items: center;
+        background-image: url(https://www.archanaskitchen.com/images/archanaskitchen/0-Contest/recipe-contest-share-the-best-non-veg-recipe-from-your-kitchen.jpg);
+        }
+        .flex-item{
+        background: linear-gradient(to right, Red, Brown, Red, Brown);
+        border: solid;
+        color:rgb(255, 255, 255)
+    }
+    body{
+        background-image: url(https://www.archanaskitchen.com/images/archanaskitchen/0-Contest/recipe-contest-share-the-best-non-veg-recipe-from-your-kitchen.jpg);
+        color:white;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <center>
+        <h1><u>Welcome To Our Non-Vegetarian</u></h1>
+        </center>
+    </header>
+    <center>
+    <div class="flex-container">
+        <div class="flex-item">
+            <h2>Non-Veg Menu</h2>
+            <h3><u><i>Non-Veg Starters</i></u></h3>
+            <ul>
+                <li>Chilli Paneer</li>
+                <li>Corn Bujya / Pakoda</li>
+                <li>Nachos & Chees Sauce</li>
+                <li>Panner Bujya / Pakoda</li>
+                <li>Nachos & Salsa</li>
+                <li>Khaman Dhokla</li>
+                <li>Rava Dhokla</li>
+                <li>Samosa</li>
+                <li>4 Pani Puri's</li>
+                <li>Chicken Kebab</li>
+            </ul>
+            <br>
+            <h3><u><i>Non-Veg Main Course</i></u></h3>
+            <ul>
+                <li>Chicken Bhature / Roti</li>
+                <li>Dhosa [Any Ingredients]</li>
+                <li>Chicken Bhurji</li>
+                <li>Homestyle Punjabi Lamb</li>
+                <li>Chicken Butter Masala + Naan</li>
+                <li>Chicken Tikka Masala + Naan</li>
+                <li>Kadai Lamb + Naan</li>
+                <li>Pav Bhaji</li>
+                <li>Vada Pav</li>
+            </ul>
+            <br>
+            <h3><u><i>Desserts</i></u></h3>
+            <ul>
+                <li>Churros & Chocolate Dip</li>
+                <li>Gulab Jamun</li>
+                <li>Gajar [Carrot] Halwa</li>
+                <li>Kulfi</li>
+                <li>Ras Malai</li>
+                <li>Kheer</li>
+                <li>Smoothie</li>
+                <li>Brownie</li>
+                <li>Brownie & Ice Cream</li>
+                <li>Chocolate Dosa</li>
+                <li>Chocolate Dosa + Ice Cream</li>
+            </ul>
+        </div>
+    </div>
+    <img src="https://static01.nyt.com/images/2015/01/28/dining/28KITCHEN1/28KITCHEN1-superJumbo.jpg" width="500" height="300">
+    <img src="https://img-global.cpcdn.com/recipes/cb9e82a3e46741b8/1200x630cq70/photo.jpg" width="500" height="300">
+    <img src="https://www.vegrecipesofindia.com/wp-content/uploads/2009/08/paneer-bhurji-2-500x375.jpg" width="400" height="300">
+    <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2014/09/1-27.jpg" width="400" height="300">
+    <br>
+    <p style="color:white">Copyrights : @dwijchothani</p>
+    </center>
+    <footer>
+        <center>
+        <h4>Time:<span id="time"></span>
+            <br>
+            <br>
+                <div id="clk">
+            <script>
+                setInterval(showtime, 1000);
+                function showtime(){
+                    var time= new Date();
+                    var hours= time.getHours();
+                    var min= time.getMinutes();
+                    var sec= time.getSeconds();
+
+                    var current_time= hours+":"+min+":"+sec;
+                    document.getElementById("time").innerHTML=current_time
+                }
+                showtime();
+            </script>
+                </div>
+            </div>
+        </center>
+    </footer>
+</body>
+</html

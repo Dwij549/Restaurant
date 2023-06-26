@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>Send a mail:</title>
+        <style>
+            body{
+                background-image: url(https://thumbs.dreamstime.com/b/cup-coffee-red-envelope-wooden-table-166119024.jpg);
+                color:white
+            }
+        </style>
+    </head>
+    <body><center>
+        <header>
+            <h1><center><u>SEND A MAIL</u></center></h1>
+        </header>
+        <hr>
+            <nav>
+                <ul>
+                    <li><a href="navigation.html" style="color: white;">Home</a></li>
+                    <li><a href="About us.html" style="color: white;">About us</a></li>
+                    <li><a href="Menu.html" style="color: white;">Menu</a></li>
+                    <li><a href="send_a_mail.html" style="color: white;">Send a mail</a></li>
+                </ul>
+            </nav>
+        <hr>
+        <center>
+            <p>If you have an concerns about our sevices please <a href="mailto:spicyhut@gamil.com" style="color: white;">send a mail here</a>.</p>
+        </center>
+        <hr>
+        <footer>
+            <h4>Time:<span id="time"></span>
+            <br>
+            <br>
+                <div id="clk">
+            <script>
+                setInterval(showtime, 1000);
+                function showtime(){
+                    var time= new Date();
+                    var hours= time.getHours();
+                    var min= time.getMinutes();
+                    var sec= time.getSeconds();
+
+                    var current_time= hours+":"+min+":"+sec;
+                    document.getElementById("time").innerHTML=current_time
+                }
+                showtime();
+            </script>
+                </div>
+            </div>
+            Copyright:@dwij.chothani
+        </footer>
+    </body></center>
+</html>
